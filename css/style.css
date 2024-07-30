@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'raleway', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+/*Header Elements --------------------------------------------------------------------*/
+
+#header {
+    height: 12%;
+    border: 1px solid black ;
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#nameAndLogo {
+    flex: 1;
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7em;
+    font-size: 2em;
+}
+
+#nameAndLogo > ion-icon {
+    font-size: 1.7em;
+}
+
+#nameAndLogo > p {
+    font-weight: 600;
+}
+
+#navBar {
+    flex: 2;
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1em;
+}
+
+#navBar > menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+#navBar > menu > li {
+    list-style: none;
+}
+
+#navBar > menu > li > a {
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 550;
+    color: black;
+}
+
+#socialLinks {
+    flex: 1;
+    border: 1px solid black;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3em;
+    gap: 2em;
+}
+
+#instagram, #twitter, #dropdownMenu {
+    text-decoration: none;
+    color: #6E6E73;
+    transition: 300ms ease-in;
+}
+
+#instagram:hover, #twitter:hover, #dropdownMenu:hover {
+    color: black;
+    transition: 300ms ease-in;
+}
+
+#instagram > ion-icon, #twitter > ion-icon {
+    font-size: 2em;
+    margin: 0%;
+}
+
+#dropdownMenu > ion-icon {
+    font-size: 2.5em;
+    margin: 0%;
+    display: none;
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+/*Home Page CSS ----------------------------------------------------------------------*/
+
+#websiteIntro {
+    margin-top: 2em;
+    height: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+#introText {
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4em;
+    font-size: 4.5em;
+    font-weight: 650;
+}
+
+.light {
+    color: #6E6E73;
+}
+
+#productImages {
+    flex: 1.2;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1em;
+    padding: 2em 3em;
+}
+
+.piComp {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.piCompImage {
+    flex: 4;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.piCompTitle {
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.piCompTitle > p {
+    text-align: center;
+}
+
+.piCompImage > img {
+    height: 200px;
+    width: auto;
+}
+/*------------------------------------------------------------------------------------*/
+
+/*Media Queries -> 1540px ------------------------------------------------------------*/
+
+@media screen and (max-width: 1540px) {
+    #nameAndLogo {
+        font-size: 1.6em;
+    }
+
+    #navBar > menu {
+        gap: 2.5em;
+    }
+
+    #navBar > menu > li > a {
+        font-size: 1.1em;
+    }
+
+    #instagram > ion-icon, #twitter > ion-icon {
+        font-size: 1.5em;
+    }
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*Media Queries -> 1256px ----------------------------------------------------------- */
+
+@media screen and (max-width: 1256px) {
+    #nameAndLogo {
+        font-size: 1.2em;
+    }
+
+    #navBar > menu {
+        gap: 1.5em;
+    }
+
+    #navBar > menu > li > a {
+        font-size: .9em;
+    }
+
+    #instagram > ion-icon, #twitter > ion-icon {
+        font-size: 1.2em;
+    }
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*Media Queries -> 972px -------------------------------------------------------------*/
+
+@media screen and (max-width: 972px) {
+    #navBar {
+        display: none;
+    }
+
+    #socialLinks {
+        gap: 1em;
+        padding-right: 1.5em;
+    }
+
+    #dropdownMenu > ion-icon{
+        display: block;
+        font-size: 1.7em;
+    }
+
+    #nameAndLogo {
+        flex: 1.7;
+        justify-content: flex-end;
+    }
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*Media Queries -> 500px -------------------------------------------------------------*/
+
+@media  screen and (max-width: 500px) {
+    #instagram, #twitter {
+        display: none;
+    }
+
+    #nameAndLogo {
+        flex: 3.5;
+    }
+
+    #dropdownMenu > ion-icon {
+        font-size: 2em;
+    }
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*Media Queries -> 352px -------------------------------------------------------------*/
+
+@media screen and (max-width: 352px) {
+    #socialLinks {
+        display: none;
+    }
+
+    #nameAndLogo {
+        justify-content: center;
+    }
+}
+
+/*------------------------------------------------------------------------------------*/
