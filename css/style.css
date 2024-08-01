@@ -129,6 +129,47 @@ body {
 /*Home Page CSS ----------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------*/
 
+/*About Page CSS ---------------------------------------------------------------------*/
+
+#main {
+    height: 60%;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em;
+    border-radius: 6em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#main > P {
+    font-size: 1.4em;   
+    font-weight: 600;
+    word-spacing: .15em;
+    line-height: 1.5em;
+}
+
+#steve1 {
+    height: 400px;
+    position: absolute;
+    bottom: 25%;
+    left: -25%;
+}
+
+#steve2 {
+    height: 350px;
+    position: absolute;
+    bottom: 25%;
+    right: -25%;
+}
+/*------------------------------------------------------------------------------------*/
+
 /*Footer Style -----------------------------------------------------------------------*/
 
 #footer {
